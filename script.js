@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5> Thought you could sneak in? Think again!</h5>
         `;
         document.getElementById('hacked-info').innerHTML = message;
-    });
+    })
     .catch(error => console.error('Error fetching IP info:', error));
 
     function type() {
