@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         document.getElementById('hacked-info').innerHTML = message;
     });
+    .catch(error => console.error('Error fetching IP info:', error));
 
     function type() {
       if (charIndex < textArray[textArrayIndex].length) {
