@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Hacked info
-  fetch('https://ipinfo.io?token=1884e42dd0e71e')
+  fetch('https://cors-anywhere.herokuapp.com/https://ipinfo.io?token=1884e42dd0e71e')
   .then(response => response.json())
   .then(data => {
       const message = `
