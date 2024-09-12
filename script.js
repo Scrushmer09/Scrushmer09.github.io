@@ -9,20 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let textArrayIndex = 0;
     let charIndex = 0;
 
-// Hacked info
-    fetch('https://ipinfo.io?token=1884e42dd0e71e')
-    .then(response => response.json())
-    .then(data => {
-        const message = `
-            <h3>Looks like I've got you!</h3>
-            <h5>I know you're hiding in <strong style="color:red;">${data.city}, ${data.region}, ${data.country} (Postal Code: ${data.postal})</strong>.</h5>
-            <h5>Your IP address is <strong style="color:red;">${data.ip}</strong>, and your ISP is <strong style="color:red;">${data.org}</strong>.</h5>
-            <h5> Thought you could sneak in? Think again!</h5>
-        `;
-        document.getElementById('hacked-info').innerHTML = message;
-    })
-    .catch(error => console.error('Error fetching IP info:', error));
-
     function type() {
       if (charIndex < textArray[textArrayIndex].length) {
         cursorSpan.classList.add('typing');
@@ -50,4 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
   
     setTimeout(type, newTextDelay + 250);
   });
+
+  // Hacked info
+  fetch('https://ipinfo.io?token=1884e42dd0e71e')
+  .then(response => response.json())
+  .then(data => {
+      const message = `
+          <h3>Looks like I've got you!</h3>
+          <h5>I know you're hiding in <strong style="color:red;">${data.city}, ${data.region}, ${data.country} (Postal Code: ${data.postal})</strong>.</h5>
+          <h5>Your IP address is <strong style="color:red;">${data.ip}</strong>, and your ISP is <strong style="color:red;">${data.org}</strong>.</h5>
+          <h5> Thought you could sneak in? Think again!</h5>
+      `;
+      document.getElementById('hacked-info').innerHTML = message;
+  })
+  .catch(error => console.error('Error fetching IP info:', error));
   
