@@ -4,6 +4,8 @@ body {
     background-image: url('matrix.gif'); /* Use the uploaded hacker image */
     background-size: cover;
     background-position: center;
+    overflow: auto;
+    scroll-behavior: smooth;
   }
   
   .navbar-brand {
@@ -71,3 +73,28 @@ body {
     font-size: 0.85rem;
   }
   
+  .achievement-box {
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.project-box {
+    background-color: #3a3a3a;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-box:hover {
+    background-color: #5a5a5a;
+}
