@@ -1,0 +1,72 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    background-image: url('matrix.gif'); /* Use the uploaded hacker image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #33ff33 !important;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    color: #33ff33;
+  }
+  
+  .name {
+    color: #33ff33;
+    font-weight: bold;
+  }
+  
+  p.lead {
+    font-size: 1.25rem;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent overlay for contrast */
+    background-blend-mode: overlay;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #c0c0c0;
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    color: #33ff33;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #00ff00;
+  }
+  
+  .cursor {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #33ff33;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  footer {
+    background-color: #111;
+  }
+  
+  footer p {
+    font-size: 0.85rem;
+  }
+  
