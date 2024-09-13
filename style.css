@@ -108,3 +108,16 @@ body {
 .project-box:hover {
     background-color: #5a5a5a;
 }
+
+.logo {
+    width: 100px; /* Equal width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add space between logos */
+    object-fit: contain;
+}
+
+.logo-overlay{
+    /* filter: brightness(0) invert(1); Make the logo white */
+    background-color: rgba(0, 0, 0, 0); /* Darken the background slightly */
+    padding: 10px; /* Add some space around the logo */
+}
