@@ -1,5 +1,5 @@
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Poppins', sans-serif;
     background-color: #000;
     background-image: url('matrix.gif'); /* Use the uploaded hacker image */
     background-size: cover;
@@ -18,22 +18,28 @@ body {
     color: #33ff33;
   }
   
-  .name {
-    color: #33ff33;
-    font-weight: bold;
-  }
-  
   p.lead {
-    font-size: 1.25rem;
     color:#697769;
   }
   
+  .name{
+    font-size: 56px;
+  }
+
   .hero {
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent overlay for contrast */
     background-blend-mode: overlay;
   }
   
+  .hero h2{
+    color: white;
+    text-shadow: 5px 4px 10px green;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
   .description {
     font-size: 1.1rem;
     color: #c0c0c0;
@@ -49,9 +55,13 @@ body {
     color: #00ff00;
   }
   
+  .typed-text{
+    color: #00ff00;
+  }
+
   .cursor {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 32px;
     color: #33ff33;
     animation: blink 0.7s infinite;
   }
