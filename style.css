@@ -9,9 +9,45 @@ body {
   }
   
   .navbar-brand {
-    font-weight: bold;
-    color: #33ff33 !important;
+    color: #1abe43; /* Set the text color to match the green */
+    font-weight: bold; /* Optionally make the text bold to stand out */
+    text-shadow: 0 0 5px rgba(26, 190, 67, 0.7); /* Subtle glow effect */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
   }
+  .custom-navbar {
+    background: linear-gradient(to right, rgba(26, 190, 67, 0), #1abe43, rgba(26, 190, 67, 0)); /* Darkest at the center, transparent on both sides */
+    background-color: transparent; /* Fallback for older browsers */
+    position: relative;
+  }
+  
+  .custom-navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(26, 190, 67, 0), #1abe43, rgba(26, 190, 67, 0)); /* Recreate the gradient */
+    z-index: -1; /* Ensure the gradient is behind the navbar content */
+  }
+  .custom-navbar .navbar-nav .nav-link {
+    color: #1abe43; /* Set the text color to match the green */
+    font-weight: bold; /* Optionally make the text bold to stand out */
+    text-shadow: 0 0 5px rgba(26, 190, 67, 0.7); /* Subtle glow effect */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .custom-navbar .navbar-nav .nav-link:hover, .navbar-brand:hover {
+    color: white; /* Keep the color the same on hover */
+    text-shadow: 0 0 10px rgba(26, 190, 67, 1); /* Intensify the glow on hover */
+  }  
+  
+  body {
+    background-image: url('matrix.gif'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
   
   h1, h2, h3 {
     font-weight: bold;

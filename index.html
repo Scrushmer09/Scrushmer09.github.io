@@ -11,7 +11,7 @@
 <body class="bg-dark text-white">
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,15 +38,32 @@
 
   <!-- Hero Section with Typing Animation -->
   <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
-    <div id="hacked-info"></div>
+    <!-- Hacked Info with Animations -->
+    <div id="hacked-info" class="hacked-info"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4 d-flex justify-content-center align-items-center flex-column">
+                <h2 class="display-4">Hello, It's me <br><span class="name">Piyush Pote</span></h2>
+                <h2>And I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
+                <!-- <p class="description">This portfolio highlights my passion for cybersecurity and my commitment to ethical practices.<br>
+                <i class="fas fa-terminal"></i> I have acquired fundamental knowledge and skills in various areas of ethical hacking, allowing me to contribute to the security of organizations and individuals.
+                </p>     -->
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5"><img class="img-fluid" src="meme.png" alt="personal image"></div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!-- <div id="hacked-info"></div>
     <h2 class="display-4">Hello, It's me <br><span class="name">Piyush Pote</span></h2>
     <h2>And I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
     <p class="description">This portfolio highlights my passion for cybersecurity and my commitment to ethical practices.<br>
       <i class="fas fa-terminal"></i> I have acquired fundamental knowledge and skills in various areas of ethical hacking, allowing me to contribute to the security of organizations and individuals.
-    </p>
+    </p> -->
 
     <h2>Top Achievements</h2>
-    <div class="container-fluid text-center"></div>
+    <div class="container-fluid text-center">
     <div class="row align-items-center">
         <div class="col logo-overlay achievement-box">
             <img class="img-fluid" src="CompTIA_Security.png" alt="Security+ Certified">
