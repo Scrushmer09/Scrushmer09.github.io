@@ -51,6 +51,16 @@ fetch('https://ipinfo.io?token=1884e42dd0e71e')
 })
 .catch(error => console.error('Error fetching IP info:', error));
 
+function showPhoneNumber() {
+  document.getElementById("phone-display").classList.remove("d-none");
+}
 
+function copyPhoneNumber() {
+  // Get the phone number text
+  var phoneNumber = document.getElementById("phone-number").innerText;
+  navigator.clipboard.writeText(phoneNumber).then(() => {
+      alert("Phone number copied to clipboard!");
+  });
+}
 
   

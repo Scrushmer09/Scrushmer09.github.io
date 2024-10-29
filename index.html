@@ -13,7 +13,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="index.html">Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,7 +29,7 @@
             <a class="nav-link" href="skills.html">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -59,12 +59,34 @@
       </div>
   </div>
   
-    <!-- <div id="hacked-info"></div>
-    <h2 class="display-4">Hello, It's me <br><span class="name">Piyush Pote</span></h2>
-    <h2>And I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
-    <p class="description">This portfolio highlights my passion for cybersecurity and my commitment to ethical practices.<br>
-      <i class="fas fa-terminal"></i> I have acquired fundamental knowledge and skills in various areas of ethical hacking, allowing me to contribute to the security of organizations and individuals.
-    </p> -->
+  <!-- <div id="hacked-info"></div>
+  <h2 class="display-4">Hello, It's me <br><span class="name">Piyush Pote</span></h2>
+  <h2>And I'm a <span class="typed-text"></span><span class="cursor">|</span></h2>
+  <p class="description">This portfolio highlights my passion for cybersecurity and my commitment to ethical practices.<br>
+    <i class="fas fa-terminal"></i> I have acquired fundamental knowledge and skills in various areas of ethical hacking, allowing me to contribute to the security of organizations and individuals.
+  </p> -->
+  <h2 class="mt-5">Top Achievements</h2>
+  <div class="container-fluid">
+  <div class="row align-items-center border">
+      <div class="col logo-overlay achievement-box">
+          <a href="CompTIA Security+ ce certificate.pdf"><img class="img-fluid" src="CompTIA_Security.png" alt="Security+ Certified"></a>
+      </div>
+      <div class="col logo-overlay achievement-box">
+          <a href="ECC-CEH-Certificate.pdf"><img class="img-fluid" src="CEH.png" alt="Certified Ethical Hacker"></a>
+      </div>
+      <div class="col logo-overlay achievement-box">
+          <a href="ISC2_CC.pdf"><img class="img-fluid" style="filter: brightness(0) invert(1);" src="cc.png" alt="CC Certified"></a>
+      </div>
+    </div>
+  <div class="row border">
+    <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="htb_logo.png" alt="htb_logo"></div>
+    <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="htb_rank.png" alt="htb_rank"></div>
+  </div>
+  <div class="row border">
+    <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="tryhackme_logo.png" alt="htb_logo"></div>
+    <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="tryhackme_rank.png" alt="htb_rank"></div>
+  </div>
+
     <h2 class="mt-3 mb-2">Work Experience</h2>
     <div class="container-fluid border">
       <div class="row align-items-center border">
@@ -123,28 +145,6 @@
       </div>
     </div>
 
-    <h2 class="mt-5">Top Achievements</h2>
-    <div class="container-fluid">
-    <div class="row align-items-center border">
-        <div class="col logo-overlay achievement-box">
-            <a href="CompTIA Security+ ce certificate.pdf"><img class="img-fluid" src="CompTIA_Security.png" alt="Security+ Certified"></a>
-        </div>
-        <div class="col logo-overlay achievement-box">
-            <a href="ECC-CEH-Certificate.pdf"><img class="img-fluid" src="CEH.png" alt="Certified Ethical Hacker"></a>
-        </div>
-        <div class="col logo-overlay achievement-box">
-            <a href="ISC2_CC.pdf"><img class="img-fluid" style="filter: brightness(0) invert(1);" src="cc.png" alt="CC Certified"></a>
-        </div>
-      </div>
-    <div class="row border">
-      <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="htb_logo.png" alt="htb_logo"></div>
-      <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="htb_rank.png" alt="htb_rank"></div>
-    </div>
-    <div class="row border">
-      <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="tryhackme_logo.png" alt="htb_logo"></div>
-      <div class="col d-flex justify-content-center align-items-center logo-overlay achievement-box"><img class="img-fluid" src="tryhackme_rank.png" alt="htb_rank"></div>
-    </div>
-
     <h2 class="mt-5 mb-2">Education</h2>
     <div class="container-fluid border">
       <div class="row align-items-center border">
@@ -166,7 +166,16 @@
     </div>
 
     <!-- Social Media Icons -->
-    <div class="social-links my-3">
+    <div class="social-links my-3" id="contact">
+          <!-- Phone Number Display (Initially Hidden) -->
+          <div id="phone-display" class="border border-success d-none align-items-center ms-2 mb-3 badge">
+            <span id="phone-number" class="me-2">+1-814-409-8786</span>
+            <!-- Copy Button -->
+            <button class="btn btn-outline-success btn-sm" onclick="copyPhoneNumber()">
+              Copy
+            </button>
+          </div>
+      <a href="javascript:void(0);" onclick="showPhoneNumber()" class="mx-2 text-success"><i class="fa-solid fa-phone fa-2x"></i></a>
       <a href="https://github.com/Scrushmer09/Scrushmer09.github.io" class="mx-2 text-success"><i class="fab fa-github fa-2x"></i></a>
       <a href="https://www.linkedin.com/in/piyush-pote-scrushmer/" class="mx-2 text-success"><i class="fab fa-linkedin fa-2x"></i></a>
       <a href="https://www.instagram.com/pi_yush_0905/" class="mx-2 text-success"><i class="fab fa-instagram fa-2x"></i></a>
